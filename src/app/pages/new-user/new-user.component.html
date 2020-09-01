@@ -1,0 +1,50 @@
+
+<div class="centered-content">
+    <div class="modal-box">
+      <h1 class="title">
+        Create New User
+      </h1>
+
+      <div class="field">
+        <label class="label">Name</label>
+        <div class="control">
+          <input #usernameInput class="input has-background-light" type="text" placeholder="e.g John Doe">
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control">
+          <input #emailInput class="input has-background-light" type="email" placeholder="e.g. johndoe@gmail.com">
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Phone No</label>
+        <div class="control">
+          <input #phoneNoInput class="input has-background-light" type="email" placeholder="e.g. 0145896478">
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Skillset</label>
+        <div class="control">
+          <input #skillsetInput class="input has-background-light" type="email" placeholder="e.g. FrontEnd Developer/Backend Developer/Designer">
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Hobby</label>
+        <div class="control">
+          <input #hobbyInput class="input has-background-light" type="email" placeholder="e.g. Watching movies">
+        </div>
+      </div>
+
+      <div class="buttons is-right">
+        <button class="button " routerLink="/">Cancel</button>
+        <button class="button is-primary has-text-white " (click)="createNewUser(usernameInput.value, emailInput.value, phoneNoInput.value, skillsetInput.value, hobbyInput.value ); selectItem()" routerLink = "/modal-popup">Create</button>
+        <app-modal *ngIf="showModal"></app-modal>
+      </div>
+
+    </div>
+  </div>

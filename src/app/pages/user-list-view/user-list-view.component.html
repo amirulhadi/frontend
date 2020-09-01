@@ -1,0 +1,49 @@
+<div class="centered-content">
+    <div class="task-manager-container">
+        <div class="tasks-list-container">
+            <h1 class="title has-text-primary">
+                List of Freelancers
+            </h1>
+            <div class="table-content" style="padding-left: 7px;">
+                <table class="table" >
+                    <tbody >
+                        <tr>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Phone No</th>
+                            <th>Skillset</th>
+                            <th>Hobby</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr *ngFor = "let list of lists" >
+                            <td>{{list.username}}</td>
+                            <td>{{list.email}}</td>
+                            <td>{{list.phoneNo}}</td>
+                            <td>{{list.skillset}}</td>
+                            <td>{{list.hobby}}</td>
+                            <td>
+                                <div class="buttons">
+                                    <button class="button is-info" [routerLink]="['/showDetails', list.id]">Update</button>
+                                  </div>
+                            </td>
+                            <td>
+                                <div class="buttons">
+                                    <button type="button" class="button is-danger" (click) = "deleteExistedUser(list.id); selectItem()" routerLink = "/delete-modal-popup" >Remove</button>
+                                    <app-modal *ngIf="showModal"></app-modal>
+                                  </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="buttonAdd">
+                <button class="button is-primary has-text-white" routerLink = "/new-user">Add New User</button>
+            </div>
+           
+
+        </div>
+    </div>
+</div>

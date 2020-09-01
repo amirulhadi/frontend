@@ -1,0 +1,50 @@
+<div class="modal is-active">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Details</p>
+      <button class="delete" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body" >
+      <div class="field">
+        <label class="label">Name</label>
+        <div class="control" >
+          <input #usernameInput class="input has-background-light" type="text"  >
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control">
+          <input #emailInput class="input has-background-light" type="email" >
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Phone No</label>
+        <div class="control">
+          <input #phoneNoInput class="input has-background-light" type="email" >
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Skillset</label>
+        <div class="control">
+          <input #skillsetInput class="input has-background-light" type="email" >
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Hobby</label>
+        <div class="control">
+          <input #hobbyInput class="input has-background-light" type="email" >
+        </div>
+      </div>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-success" (click) = 'updateExistedUser(usernameInput.value, emailInput.value, phoneNoInput.value, skillsetInput.value, hobbyInput.value ); selectItem()' routerLink='/update-modal-popup'>Update</button>
+      <app-modal *ngIf="showModal"></app-modal>
+      <button class="button" routerLink = "/">Cancel</button>
+    </footer>
+  </div>
+</div>

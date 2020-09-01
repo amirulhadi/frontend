@@ -1,0 +1,47 @@
+@import '../../../mainStyle.scss';
+
+.task-manager-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    max-height: 680px;
+    border-radius: 8px;
+    background: white;
+}
+
+.task-list-container{
+    display: flex;
+    flex-grow: 1;
+}
+
+.title{
+    font-family: 'Lato';
+    font-size: 30px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.table-content{
+    height: 80%;
+    overflow: auto;
+    width: 100%;
+}
+
+tr{
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+    &:active{
+        transform: scale(0.95);
+    }
+
+    &:hover{
+        box-shadow: 0 0 0 5px #eeeeee;
+    }
+}
+
+.buttonAdd{
+    padding-left: 10px;
+    padding-top: 10px;
+}
