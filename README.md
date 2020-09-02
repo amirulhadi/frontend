@@ -1,7 +1,24 @@
-# Frontend
+# Complete Developer Network (CDN)
+Simple app created with Angular, Node.js, and PostgreSql
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Demo](#demo)
 
+## General Info
+This project is a a fictional company, CDN - Complete Developer Network is going to build a list of freelancers.
+such that they could have a directory of contact get people for their job. The frontend will capture, post and retrieve the data from backend
+
+## Technologies
+Project is created with:
+* Angular 
+
+## Setup
+### Front-End
+Implement the front-end development using Angular Framework 
+SCSS by using Bulma CSS Framework
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -14,14 +31,17 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+![](images/frontendcode.PNG)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Hosted
+- Frontend code is hosted in Netlify
+- Changing the root url to connect with the api backend
+  ```
+  this.ROOT_URL = 'https://ccomplete-developer-network.herokuapp.com';
+  ```
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Demo
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
