@@ -43,6 +43,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ![](images/netlify.PNG)
 
 ## Demo
-https://cdntechnology.netlify.app/userList
+https://cdntechnology.netlify.app
 
 
