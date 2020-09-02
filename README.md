@@ -1,5 +1,6 @@
-# Complete Developer Network (CDN)
-Simple app created with Angular, Node.js, and PostgreSql
+# Complete Developer Network (CDN) - Frontend
+Simple app created with Angular and integrate with Node.js, and PostgreSql
+Can refer to https://github.com/amirulhadi/API-cdn for the API
 
 ## Table of contents
 * [General info](#general-info)
@@ -39,9 +40,9 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
   ```
   this.ROOT_URL = 'https://ccomplete-developer-network.herokuapp.com';
   ```
-
+![](images/netlify.PNG)
 
 ## Demo
-
+https://cdntechnology.netlify.app/userList
 
 
