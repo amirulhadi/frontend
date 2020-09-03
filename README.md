@@ -42,6 +42,10 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
   ```
 ![](images/netlify.PNG)
 
+### Issue encountered
+The UPDATE button is not fully functional at the front end side and I'm not be able to fix it which takes some time for me but the 
+backend functionality for UPDATE is working properly.
+
 ## Demo
 https://cdntechnology.netlify.app
 
